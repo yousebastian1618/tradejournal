@@ -1,0 +1,45 @@
+.sidebar-container {
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  .sidebar-top {
+    display: flex;
+    flex-direction: column;
+    .logo-container {
+      position: relative;
+      width: 80%;
+      display: flex;
+      aspect-ratio: 1.5;
+      padding: 1rex;
+      margin: auto;
+      .logo {
+        object-fit: fill;
+      }
+    }
+    .items {
+      margin: 2rem 0;
+      .item {
+        display: flex;
+        margin: auto;
+        padding: 1rem 1rem;
+        cursor: pointer;
+        .item-label {
+          margin-left: 1rem;
+          letter-spacing: 2px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.selected-background {
+  background-color: var(--color1);
+}
+.hovering-background {
+  &:hover {
+    background-color: hsla(220, 15%, 20%, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  }
+}

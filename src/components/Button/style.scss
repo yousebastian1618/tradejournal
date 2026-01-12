@@ -1,0 +1,12 @@
+.button-container {
+  padding: 1rex 2rex;
+  background-color: var(--color1);
+  transition: 0.1s ease-in-out;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 1ex;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--color2);
+  }
+}
