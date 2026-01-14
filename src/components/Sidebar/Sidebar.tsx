@@ -13,7 +13,7 @@ type Props = {
 export default function Sidebar({ currentPage, onSelect }: Props) {
 
   return (
-    <div className={'sidebar-container'}
+    <div className={'sidebar-container skeleton-background'}
          style={{ width: '18%'}}
     >
       <div className={'sidebar-top'}>

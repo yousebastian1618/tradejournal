@@ -1,5 +1,23 @@
+import Calendar from "@/components/Calendar/Calendar";
+import {CalendarStatsItems} from "@/objects";
+import NumberStat from "@/components/Stats/NumberStat/NumberStat";
+
 export default function CalendarPage() {
   return (
-    <p>Track trades and key events on the calendar.</p>
+    <div className={'calendar-container'}>
+      <div className={'calendar-stats skeleton-background'}>
+        <span className={'subtitle'}>Stats</span>
+        <div className={'calendar-stat-items'}>
+          {CalendarStatsItems.map((item) => {
+            return (
+              <NumberStat item={item} />
+            )
+          })}
+        </div>
+      </div>
+      <div className={'calendar'}>
+        <Calendar />
+      </div>
+    </div>
   );
 }

@@ -7,7 +7,7 @@ import {
   Notebook,
   type LucideIcon,
 } from 'lucide-react';
-import {SideBarItem} from "@/types/types";
+import {SideBarItem, StatItem} from "@/types/types";
 
 export const IconMap: Record<string, LucideIcon> = {
   "settings": Settings,
@@ -43,5 +43,33 @@ export const SidebarItems: SideBarItem[] = [
     icon: 'notebook',
     label: 'Journal',
     path: '/journal'
+  }
+]
+
+export const CalendarStatsItems: StatItem[] = [
+  {
+    name: 'totalReturn',
+    label: 'Total Return',
+    description: 'The total profit/loss across all filtered trades.',
+    value: 1000
+  },
+  {
+    name: 'profitFactor',
+    label: 'Profit Factor',
+    description: 'A profit factor above 1.0 means your winning trades outweigh your losing trades.\n' +
+      'For example, 2.0 means you make $2 for every $1 lost.',
+    value: 1.49
+  },
+  {
+    name: 'averageReturn',
+    label: 'Average Return',
+    description: 'Calculated as total profit/loss divided by the total number of trades.',
+    value: 3.03
+  },
+  {
+    name: 'winRate',
+    label: 'Win Rate',
+    description: 'Calculated as number of winning trades divided by total number of trades.',
+    value: 0.67
   }
 ]
