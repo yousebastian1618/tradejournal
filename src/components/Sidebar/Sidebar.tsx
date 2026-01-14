@@ -3,7 +3,6 @@ import './style.scss';
 import Image from "next/image";
 import {SidebarItems} from "@/objects";
 import Icon from "@/components/Icon/Icon";
-import {useState} from "react";
 import {SideBarItem} from "@/types/types";
 
 type Props = {
@@ -30,8 +29,8 @@ export default function Sidebar({ currentPage, onSelect }: Props) {
         <div className={'items'}>
           {SidebarItems.map((item) => {
             return (
-              <div className={`item ${currentPage.label === item.label ? 'selected-background' : 'hovering-background'}`}
-                   key={item.label}
+              <div className={`item ${currentPage.path === item.path ? 'selected-background' : 'hovering-background'}`}
+                   key={item.path}
                    onClick={() => onSelect(item)}
               >
                 <Icon name={item.icon} />

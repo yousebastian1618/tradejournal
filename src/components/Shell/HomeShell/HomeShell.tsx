@@ -1,23 +1,19 @@
-'use client'
 import './style.scss';
-import Sidebar from "@/components/Sidebar/Sidebar";
+import SidebarNavigation from "@/components/Sidebar/SidebarNavigation";
 import MainPage from "@/components/MainPage/MainPage";
-import {useState} from "react";
-import {SidebarItems} from "@/objects";
-import {SideBarItem} from "@/types/types";
+import {ReactNode} from "react";
 
-export default function HomeShell() {
+type Props = {
+  children: ReactNode;
+};
 
-  const [currentPage, setCurrentPage] = useState(SidebarItems[0]);
-
-  const selectCurrentPage = (item: SideBarItem) => {
-    setCurrentPage(item);
-  }
-
+export default function HomeShell({ children }: Props) {
   return (
     <div className={'home-shell-container'}>
-      <Sidebar currentPage={currentPage} onSelect={(i) => selectCurrentPage(i)}/>
-      <MainPage currentPage={currentPage}/>
+      <SidebarNavigation />
+      <MainPage>
+        {children}
+      </MainPage>
     </div>
   )
 }

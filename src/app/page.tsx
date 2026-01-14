@@ -1,10 +1,5 @@
-import './style.scss';
-import HomeShell from "@/components/Shell/HomeShell/HomeShell";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <div className={'home-page'}>
-      <HomeShell />
-    </div>
-  );
+  redirect('/dashboard');
 }

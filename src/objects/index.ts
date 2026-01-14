@@ -21,22 +21,27 @@ export const IconMap: Record<string, LucideIcon> = {
 export const SidebarItems: SideBarItem[] = [
   {
     icon: 'house',
-    label: 'Dashboard'
+    label: 'Dashboard',
+    path: '/dashboard'
   },
   {
     icon: 'calendar',
-    label: 'Calendar'
+    label: 'Calendar',
+    path: '/calendar'
   },
   {
     icon: 'chart-candlestick',
-    label: 'Trades'
+    label: 'Trades',
+    path: '/trades'
   },
   {
     icon: 'chart-line',
-    label: 'Analysis'
+    label: 'Analysis',
+    path: '/analysis'
   },
   {
     icon: 'notebook',
-    label: 'Journal'
+    label: 'Journal',
+    path: '/journal'
   }
 ]
