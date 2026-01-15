@@ -14,17 +14,20 @@ export default function Sidebar({ currentPage, onSelect }: Props) {
 
   return (
     <div className={'sidebar-container skeleton-background'}
-         style={{ width: '18%'}}
+         style={{ width: '12%'}}
     >
       <div className={'sidebar-top'}>
         <div className={'logo-container'}>
-          <Image
-            className={'logo'}
-            src={"/trade-journal-logo.png"}
-            alt={'logo'}
-            fill
-            draggable={false}
-          />
+          <div className={'image-container'}>
+            <Image
+              className={'logo'}
+              src={"/trade-journal-logo.png"}
+              alt={'logo'}
+              fill
+              draggable={false}
+            />
+          </div>
+          <span className={'logo-title'}>Trade Journal</span>
         </div>
         <div className={'items'}>
           {SidebarItems.map((item) => {

@@ -6,14 +6,21 @@
     display: flex;
     flex-direction: column;
     .logo-container {
-      position: relative;
-      width: 80%;
       display: flex;
-      aspect-ratio: 1.5;
-      padding: 1rex;
-      margin: auto;
-      .logo {
-        object-fit: fill;
+      align-items: center;
+      gap: 1rex;
+      .image-container {
+        position: relative;
+        width: 15%;
+        display: flex;
+        aspect-ratio: 1;
+        padding: 1rex;
+        .logo {
+          object-fit: fill;
+        }
+      }
+      .logo-title {
+        font-size: 1.8rem;
       }
     }
     .items {
@@ -34,7 +41,7 @@
 }
 
 .selected-background {
-  background-color: var(--color1);
+  background: linear-gradient(45deg, #6a00ff, #ff4ecd);
 }
 .hovering-background {
   &:hover {
