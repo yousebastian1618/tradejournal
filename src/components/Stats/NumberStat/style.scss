@@ -1,0 +1,20 @@
+.number-stat-container {
+  text-align: center;
+  font-weight: bold;
+  background-color: #202027;
+  position: relative;
+  .question-mark {
+    position: absolute;
+    left: 95%;
+    top: 5%;
+    z-index: 1;
+
+  }
+  .stat-label {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  .stat-value {
+    font-size: 2rem;
+  }
+}

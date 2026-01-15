@@ -9,4 +9,5 @@ export type StatItem = {
   label: string;
   description: string;
   value: string | number;
+  valueType: string;
 }

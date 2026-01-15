@@ -1,3 +1,4 @@
+import './style.scss';
 import Calendar from "@/components/Calendar/Calendar";
 import {CalendarStatsItems} from "@/objects";
 import NumberStat from "@/components/Stats/NumberStat/NumberStat";
@@ -10,7 +11,9 @@ export default function CalendarPage() {
         <div className={'calendar-stat-items'}>
           {CalendarStatsItems.map((item) => {
             return (
-              <NumberStat item={item} />
+              <div className={'calendar-stat-item'} key={item.name}>
+                <NumberStat item={item} />
+              </div>
             )
           })}
         </div>

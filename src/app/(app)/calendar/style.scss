@@ -1,0 +1,12 @@
+.calendar-container {
+  .calendar-stats {
+    .calendar-stat-items {
+      display: flex;
+      justify-content: space-between;
+      gap: 3rem;
+      .calendar-stat-item {
+        width: 100%;
+      }
+    }
+  }
+}
