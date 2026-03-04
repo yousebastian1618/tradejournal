@@ -1,0 +1,58 @@
+.sidebar-container {
+  box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+  display: flex;
+  flex-direction: column;
+  width: clamp(14rem, 18vw, 16rem);
+  padding: 1ex 0;
+  &__top {
+    display: flex;
+    flex-direction: column;
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      flex-wrap: nowrap;
+      &__image-container {
+        position: relative;
+        width: 3rem;
+        display: flex;
+        aspect-ratio: 1;
+        padding: 2rex;
+        .image {
+          object-fit: fill;
+        }
+      }
+      &__title {
+        font-size: 1.8rem;
+        white-space: nowrap;
+        font-weight: 500;
+      }
+    }
+    .sidebar-list {
+      margin: 2rem 0;
+      &__item {
+        display: flex;
+        margin: auto;
+        padding: 1rem;
+        cursor: pointer;
+        .item-label {
+          margin-left: 1rem;
+          letter-spacing: 2px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.selected-background {
+  background: linear-gradient(45deg, #6a00ff, #ff4ecd);
+}
+
+.hovering-background {
+  &:hover {
+    //background-color: var(--color1);
+    //box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  }
+}
