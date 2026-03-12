@@ -12,6 +12,7 @@
       align-items: center;
       gap: 0.25rem;
       flex-wrap: nowrap;
+      padding: 1ex;
       &__image-container {
         position: relative;
         width: 3rem;
@@ -53,6 +54,6 @@
   &:hover {
     //background-color: var(--color1);
     //box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 10px 50px;
   }
 }

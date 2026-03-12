@@ -1,5 +1,9 @@
+import DashboardStatistics from "@/components/Dashboard/Statistics/Statistics";
+
 export default function DashboardPage() {
   return (
-    <p>Overview of your trading performance will live here.</p>
+    <div className={'dashboard'}>
+      <DashboardStatistics />
+    </div>
   )
 }

@@ -1,0 +1,53 @@
+.dashboard-statistics {
+  border-radius: 1ex;
+  padding: 2ex;
+  width: 100%;
+  background-color: white;
+  box-shadow: rgba(67, 71, 85, 0.27) 0 0 0.25em, rgba(90, 125, 188, 0.05) 0 0.25em 1em;
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    .stats-toggle {
+      display: flex;
+      background-color: #E9E4ED;
+      border-radius: 2rem;
+      & > * {
+        padding: 1rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 2rem 0 0 2rem;
+        &:last-child {
+          border-radius: 0 2rem 2rem 0;
+        }
+        &:hover {
+          background-color: #F4F2F7;
+        }
+      }
+    }
+  }
+  .statistics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1ex;
+    &-item {
+      box-shadow: rgba(67, 71, 85, 0.27) 0 0 0.25em, rgba(90, 125, 188, 0.05) 0 0.25em 1em;
+      border-radius: 1ex;
+      padding: 2ex;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      .statistics-value {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.selected {
+  background-color: #F4F2F7;
+}

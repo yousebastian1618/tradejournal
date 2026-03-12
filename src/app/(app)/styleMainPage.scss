@@ -1,0 +1,13 @@
+.main-page {
+  padding: 1ex 1rem;
+  width: 100%;
+  background-color: #F3F0F5;
+  &__header {
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+  &__content {
+  }
+}

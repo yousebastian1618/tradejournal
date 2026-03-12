@@ -2,6 +2,7 @@
 import {ReactNode, useMemo} from "react"
 import {usePathname} from "next/navigation";
 import {SidebarItems} from "@/objects";
+import './styleMainPage.scss';
 
 type props = {
   children: ReactNode;
@@ -21,7 +22,7 @@ export default function MainPage({ children }: props) {
   return (
     <div className={'main-page'}>
       <div className={'main-page__header'}>
-        <h1 className={'main-page__title'}>{currentPageLabel}</h1>
+        <h1 className={'title'}>{currentPageLabel}</h1>
       </div>
       <div className={'main-page__content'}>
         {children}
