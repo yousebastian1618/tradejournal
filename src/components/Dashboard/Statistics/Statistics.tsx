@@ -13,7 +13,7 @@ export default function DashboardStatistics() {
   const [stats, setStats] = useState('keyStats');
 
   return (
-    <div className={'dashboard-statistics'}>
+    <div className={'dashboard-statistics component-container'}>
       <div className={'dashboard-statistics-header'}>
         <h1 className={'component-title'}>Statics</h1>
         <span className={'stats-toggle'}>

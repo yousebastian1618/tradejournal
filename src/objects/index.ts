@@ -110,6 +110,15 @@ export const sampleDashboardStatisticsTimeStats = [
   }
 ]
 
+export const recentTradesHeaders = [
+  'Entry Date',
+  'Entry Time',
+  'Side',
+  'Ticker/Type',
+  'Quantity',
+  'P&L'
+]
+
 
 
 // cumulative return

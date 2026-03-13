@@ -28,6 +28,15 @@ body {
   /*color: var(--foreground);*/
   /*font-family: Arial, Helvetica, sans-serif;*/
 }
+
+.component-container {
+  border-radius: 1ex;
+  padding: 2ex;
+  width: 100%;
+  background-color: white;
+  box-shadow: rgba(67, 71, 85, 0.27) 0 0 0.25em, rgba(90, 125, 188, 0.05) 0 0.25em 1em;
+}
+
 .component-title {
   font-size: 1.5rem;
   font-weight: bold;

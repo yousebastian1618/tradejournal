@@ -15,7 +15,9 @@ export const formatNumber = (value: number, type: string) => {
     const minutes = Math.floor(seconds / 60);
     seconds %= 60;
     if (days) return `${days}D ${hours}H ${minutes}M ${seconds}S`;
-    return `${hours}H ${minutes}M ${seconds}S`;
+    if (hours) return `${hours}H ${minutes}M ${seconds}S`;
+    if (minutes) return `${minutes}M ${seconds}S`;
+    return `${seconds}S`;
   }
   if (type === 'percentage') {
     return value * 100 + '%';
