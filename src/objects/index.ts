@@ -119,6 +119,33 @@ export const recentTradesHeaders = [
   'P&L'
 ]
 
+export const recentTraderSummary = [
+  {
+    name: 'totalPL',
+    label: 'Total P/L',
+    format: 'currency',
+    value: 8394.23
+  },
+  {
+    name: 'unrealizedPL',
+    label: 'Unrealized P/L',
+    format: 'currency',
+    value: 94837.23
+  },
+  {
+    name: 'totalTrades',
+    label: 'Total Trades',
+    format: 'number',
+    value: 994
+  },
+  {
+    name: 'openPositions',
+    label: 'Open Positions',
+    format: 'number',
+    value: 4
+  }
+]
+
 
 
 // cumulative return

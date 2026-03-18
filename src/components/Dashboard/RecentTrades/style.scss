@@ -1,4 +1,24 @@
 .recent-trades-container {
+  .trade-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1ex;
+    margin: 1rem 0;
+    .summary-item {
+      box-shadow: rgba(67, 71, 85, 0.27) 0 0 0.25em, rgba(90, 125, 188, 0.05) 0 0.25em 1em;
+      border-radius: 1ex;
+      padding: 2ex;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      .summary-value {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+    }
+  }
   .table-container {
     .table {
       border-collapse: collapse;

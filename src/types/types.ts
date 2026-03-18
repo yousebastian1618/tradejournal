@@ -3,3 +3,9 @@ export type SidebarItem = {
   icon: string;
   path: string;
 }
+
+export type CalendarDayCell = {
+  date: Date;
+  isCurrentMonth: boolean;
+  isToday: boolean;
+}
